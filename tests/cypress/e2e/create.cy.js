@@ -1,4 +1,5 @@
 import mapPage from '../support/pages/Map'
+import createPage from '../support/pages/Create'
 
 describe('Recomendação', () => {
 
@@ -21,11 +22,12 @@ describe('Recomendação', () => {
 
         cy.apiCreateUser(user)
         cy.uiLogin(user)
+
         mapPage.createLink()
+        createPage.form(foodtruck)
+        createPage.submit()
 
-        cy.setGeolocation(foodtruck.latitude, foodtruck.longitude)
-
-        cy.wait(30000)
+        createPage.modal.haveText('Food truck cadastrado com sucesso!')
 
     })
 })
