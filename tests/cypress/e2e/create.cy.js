@@ -17,7 +17,8 @@ describe('Recomendação', () => {
             longitude: '-43.92247617244721',
             name: 'Los pocos hermanos',
             details: 'Onde você pode comprar comida mexicana baseada em frango e otras coisitas mas',
-            opening_hours: 'das 14h às 20h'
+            opening_hours: 'das 14h às 20h',
+            open_on_weekends: false
         }
 
         cy.apiCreateUser(user)
