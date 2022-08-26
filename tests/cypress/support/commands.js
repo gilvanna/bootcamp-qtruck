@@ -58,3 +58,8 @@ Cypress.Commands.add('uiLogin', (user) => {
     mapPage.loggedUser(user.name)
 
 })
+
+Cypress.Commands.add('setGeolocation', (lat, long) => {
+    localStorage.setItem('qtruck:latitude', lat)
+    localStorage.setItem('qtruck:longitude', long)
+})
