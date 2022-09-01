@@ -65,8 +65,8 @@ describe('Recomendação', () => {
     it('todos os campos são obrigatórios', () => {
 
         const user = {
-            name: 'Joey',
-            instagram: '@joey',
+            name: 'Chandler',
+            instagram: '@chandler',
             password: 'pwd123'
         }
 
