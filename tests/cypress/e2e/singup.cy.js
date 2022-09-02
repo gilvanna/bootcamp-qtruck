@@ -12,10 +12,6 @@ describe('Signup', () => {
 
         cy.apiResetUser(user.instagram)
 
-        // cy.deleteMany({instagram: user.instagram}, {collection: 'users'}).then(res => { 
-        //     cy.log(res); 
-        // });
-
         signupPage.go()
         signupPage.form(user)
         signupPage.submit()

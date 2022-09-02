@@ -7,7 +7,7 @@ describe('login', () => {
     const user = {
       name: 'Farofa',
       instagram: '@farofa',
-      password: 'farofeiro15'
+      password: 'pwd123'
     }
 
     loginPage.go()

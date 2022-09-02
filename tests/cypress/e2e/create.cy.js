@@ -7,16 +7,16 @@ describe('Recomendação', () => {
     it('deve recomendar um food truck', () => {
 
         const user = {
-            name: 'Heisenberg',
-            instagram: '@heisenberg',
+            name: 'Ross Geller',
+            instagram: '@ross',
             password: 'pwd123'
         }
 
         const foodtruck = {
-            latitude: '-19.924451293436803',
-            longitude: '-43.92247617244721',
-            name: 'Los pocos hermanos',
-            details: 'Onde você pode comprar comida mexicana baseada em frango e otras coisitas mas',
+            latitude: '-19.91430885381262',
+            longitude: '-43.91131281852723',
+            name: 'Jurassic Park',
+            details: 'Venha experimentar hamburgueres jurássicos!',
             opening_hours: 'das 14h às 20h',
             open_on_weekends: false
         }
@@ -40,9 +40,9 @@ describe('Recomendação', () => {
         }
 
         const foodtruck = {
-            latitude: '-19.924355470348786',
-            longitude: '-43.92172515392304',
-            name: 'Food Truck da Monica Geller',
+            latitude: '-19.91279575384851',
+            longitude: '-43.91061544418336',
+            name: 'Seven',
             details: 'Pratos sofisticados e deliciosos! I KNOW!',
             opening_hours: 'das 18h as 22h',
             open_on_weekends: false
@@ -71,8 +71,8 @@ describe('Recomendação', () => {
         }
 
         const foodtruck = {
-            latitude: '-19.913582567636404',
-            longitude: '-43.91160786151887',
+            latitude: '-19.913461519616114',
+            longitude: '-43.9113074541092',
         }
 
         cy.apiCreateUser(user)
