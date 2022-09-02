@@ -1,4 +1,5 @@
-
+import mapPage from '../support/pages/Map'
+import foodTruckPage from '../support/pages/Foodtruck'
 
 describe('Avaliações', () => {
     it('deve enviar uma nova avaliação', () => {
@@ -18,14 +19,19 @@ describe('Avaliações', () => {
             open_on_weekends: false
         }
 
+        const review = {
+            comment: 'O sanduíche de mortadela é o melhor! Porém o preço é um pouco fora da realidade',
+            stars: 4
+        }
+
         cy.apiCreateUser(user)
         cy.apiLogin(user)
         cy.apiCreateFoodTruck(foodtruck)
 
         cy.uiLogin(user)
 
-        cy.wait(10000)
-
+        mapPage.goToFoodTruck(foodtruck.name)
+        foodTruckPage.addReview(review)
 
     })
 })
