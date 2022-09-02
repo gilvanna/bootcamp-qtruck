@@ -20,7 +20,7 @@ describe('Avaliações', () => {
         }
 
         const review = {
-            comment: 'O sanduíche de mortadela é o melhor! Porém o preço é um pouco fora da realidade',
+            comment: 'O sanduíche de mortadela é o melhor!',
             stars: 4
         }
 
@@ -32,6 +32,7 @@ describe('Avaliações', () => {
 
         mapPage.goToFoodTruck(foodtruck.name)
         foodTruckPage.addReview(review)
+        foodTruckPage.checkPostedReview(user, review)
 
     })
 })
