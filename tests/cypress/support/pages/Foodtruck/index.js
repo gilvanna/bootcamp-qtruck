@@ -9,16 +9,23 @@ class FoodTruckPage {
     }
 
     checkPostedReview(user, review) {
-        cy.get('.details strong')
-            .should('have.text', user.name)
-        cy.get
-        cy.get('.comment')
+        cy.contains('.review-box', user.instagram).as('reviewBox')
+
+        cy.get('@reviewBox')
+            .find('.comment p')
             .should('have.text', review.comment)
 
-        cy.get('.stars svg')
-            .as('reviewStars')
-            .its('length')
-            .should('eq', review.stars)
+        cy.get('@reviewBox')
+            .find('.stars svg')
+            .should('have.length', review.stars)
+    }
+
+    checkEmptyReviewFields(review){
+        cy.get('textarea[name=comment]')
+        .should('be.empty')
+
+        cy.get(`input[name=stars][value="${review.stars}"]`)
+        .should('not.be.checked')
     }
 }
 
