@@ -2,7 +2,10 @@
 node_modules
 
 #testing
+allure-results
 cypress/downloads
+cypress/videos
+cypress/screenshots
 
 #misc
 .DS_Store

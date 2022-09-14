@@ -3,7 +3,7 @@ import foodTruckPage from '../support/pages/Foodtruck'
 
 describe('Avaliações', () => {
 
-    it.only('deve enviar uma nova avaliação', () => {
+    it('deve enviar uma nova avaliação', () => {
 
         cy.fixture('review').as('userReview')
 
