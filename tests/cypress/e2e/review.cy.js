@@ -54,7 +54,7 @@ describe('Avaliações', () => {
 
         const review = {
             comment: 'Poderia tratar melhor os gatinhos da rua.',
-            stars: 2
+            stars: 4
         }
 
         cy.apiCreateUser(user)
