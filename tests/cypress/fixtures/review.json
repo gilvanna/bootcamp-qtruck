@@ -1,0 +1,19 @@
+{
+    "user": {
+        "name": "Joey Tribianni",
+        "instagram": "@joey",
+        "password": "pwd123"
+    },
+    "foodtruck": {
+        "latitude": "-19.91355734930648",
+        "longitude": "-43.91143888235093",
+        "name": "Sanduíches do Joey",
+        "details": "Os melhores sanduíches",
+        "opening_hours": "das 15h as 18h",
+        "open_on_weekends": false
+    },
+    "review": {
+        "comment": "O sanduíche de peperoni é o melhor!",
+        "stars": 4
+    }
+}
